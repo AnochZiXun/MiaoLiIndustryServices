@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<HTML dir="ltr" lang="zh-TW">
+	<HEAD>
+		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<META charset="UTF-8">
+		<META content="width=device-width,initial-scale=1.0" name="viewport">
+		<LINK href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/dark-hive/jquery-ui.css" rel="stylesheet" media="all" type="text/css">
+		<LINK href="/STYLE/default.css" rel="stylesheet" media="all" type="text/css">
+		<LINK href="/STYLE/aDMiNiSTRaTioN.css" rel="stylesheet" media="all" type="text/css">
+		<LINK href="/STYLE/counseling.css" rel="stylesheet" media="all" type="text/css">
+		<SCRIPT src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></SCRIPT>
+		<SCRIPT src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></SCRIPT>
+		<SCRIPT src="/SCRIPT/default.js"></SCRIPT>
+		<SCRIPT src="/SCRIPT/counseling.js"></SCRIPT>
+		<TITLE></TITLE>
+	</HEAD>
+	<!--1.0-->
+	<BODY>
+		<TABLE id="contentWrapper">
+			<TBODY>
+				<TR>
+					<TD>
+						<ASIDE id="accordion">
+							<H3>功能管理</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="/JiHuaJianJie/">計畫簡介</A>
+									</LI>
+									<LI>
+										<A href="/ZuiXinXiaoXi/">最新消息</A>
+									</LI>
+									<LI>
+										<A href="/HuoDongHuaXu/">活動花絮</A>
+									</LI>
+									<LI>
+										<A href="/FuDaoLiuCheng/">輔導流程</A>
+									</LI>
+									<LI>
+										<A href="/FuDaoTuanDui/">輔導團隊</A>
+									</LI>
+									<LI>
+										<A href="/XiaZaiZhuanQu/">下載專區</A>
+									</LI>
+									<LI>
+										<A href="/FuDaoAnLi/">輔導案例</A>
+									</LI>
+									<LI>
+										<A href="/YouZhanLianJie/">友站連結</A>
+									</LI>
+									<LI>
+										<A href="/LianLuoWoMen/">聯絡我們</A>
+									</LI>
+								</UL>
+							</DIV>
+
+							<H3>其它</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="/QunZu/">群組</A>
+									</LI>
+									<LI>
+										<A href="/DanWei/">單位</A>
+									</LI>
+									<LI>
+										<A href="/RenYuan/">人員</A>
+									</LI>
+									<LI>
+										<A href="/ChangShang/">廠商</A>
+									</LI>
+									<LI>
+										<A href="/GongYeQu/">工業區</A>
+									</LI>
+									<LI>
+										<A href="/XingZhengQu/">行政區</A>
+									</LI>
+								</UL>
+							</DIV>
+
+							<H3>存取管理</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="/QuanXian/">權限</A>
+									</LI>
+									<LI>
+										<A href="/LuYou/">路由</A>
+									</LI>
+									<LI>
+										<A href="/ShouFengQin/">手風琴</A>
+									</LI>
+								</UL>
+							</DIV>
+						</ASIDE>
+						<IMG alt="logo" src="/IMG/135x47.png">
+					</TD>
+					<TD>
+						<FORM id="pagination" action="" method="GET">
+							<TABLE class="list">
+								<CAPTION class="cF">
+									<LABEL>
+										<SPAN>年度</SPAN>
+										<INPUT class="bitstreamVeraSansMono numeric" maxlength="3" name="taiwaneseYear" type="text" value="">
+									</LABEL>
+									<B class="blank">&nbsp;</B>
+									<LABEL>
+										<SPAN>計畫名稱</SPAN>
+										<INPUT name="queryString" type="text" value="">
+									</LABEL>
+									<B class="blank">&nbsp;</B>
+									<LABEL>
+										<INPUT name="closed" type="radio" value="false">
+										<SPAN>審核中</SPAN>
+									</LABEL>
+									<LABEL>
+										<INPUT name="closed" type="radio" value="true">
+										<SPAN>已結案</SPAN>
+									</LABEL>
+									<B class="blank">&nbsp;</B>
+									<INPUT class="button" type="submit" value="搜尋">
+								</CAPTION>
+								<THEAD>
+									<TR>
+										<TH>年度</TH>
+										<TH>計畫名稱</TH>
+										<TH>受輔導廠商</TH>
+										<TH>廠商地址</TH>
+										<TH>廠商電話</TH>
+										<TH>補助金額</TH>
+										<TH>案件狀態</TH>
+										<TH>修改</TH>
+									</TR>
+								</THEAD>
+								<TFOOT>
+									<TR>
+										<TD colspan="8">
+											<DIV class="fL">
+												<A class="button" href="add.asp">新增</A>
+											</DIV>
+											<DIV class="fR">
+												<SPAN style="margin:0 3px">
+													<LABEL>
+														<SPAN>每頁</SPAN>
+														<INPUT class="numeric" maxlength="2" name="s" type="text" value="10">
+														<SPAN>筆</SPAN>
+													</LABEL>
+													<SPAN>：</SPAN>
+													<LABEL>
+														<SPAN>第</SPAN>
+														<SELECT name="p">
+															<OPTION value="0" selected>1</OPTION>
+														</SELECT>
+														<SPAN>/</SPAN>
+														<SPAN>1</SPAN>
+														<SPAN>頁</SPAN>
+													</LABEL>
+													<SPAN>(共</SPAN>
+													<SPAN>2</SPAN>
+													<SPAN>筆)</SPAN>
+												</SPAN>
+											</DIV>
+										</TD>
+									</TR>
+								</TFOOT>
+								<TBODY>
+									<TR>
+										<TD class="bitstreamVeraSansMono">104</TD>
+										<TD>國仰計畫</TD>
+										<TD>國仰企業有限公司</TD>
+										<TD>頭份鎮蘆竹里16鄰249-3號</TD>
+										<TD class="bitstreamVeraSansMono">091112146</TD>
+										<TD class="bitstreamVeraSansMono">NT$123,654</TD>
+										<TD>審核中</TD>
+										<TD>
+											<A class="fontAwesome" href="1.asp"></A>
+										</TD>
+									</TR>
+									<TR class="odd">
+										<TD class="bitstreamVeraSansMono">103</TD>
+										<TD>四方計畫</TD>
+										<TD>四方鮮乳牧場</TD>
+										<TD>竹南鎮崎頂里9-6號</TD>
+										<TD class="bitstreamVeraSansMono">037584743</TD>
+										<TD class="bitstreamVeraSansMono">NT$22,222,222</TD>
+										<TD>已結案</TD>
+										<TD>
+											<A class="fontAwesome" href="2.asp"></A>
+										</TD>
+									</TR>
+								</TBODY>
+							</TABLE>
+						</FORM>
+					</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<DIV id="header" class="cF">
+			<DIV id="breadcrumb" class="fL">
+				<A href="">首頁</A>
+				<SPAN>&raquo;</SPAN>
+				<A>這頁</A>
+			</DIV>
+			<DIV class="fR">
+				<A>某咪郎</A>
+				<SPAN>&raquo;</SPAN>
+				<A href="">登出</A>
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>

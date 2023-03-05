@@ -1,0 +1,386 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<META charset="UTF-8">
+		<META name="viewport" content="width=device-width, initial-scale=1.0">
+		<LINK href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/dark-hive/jquery-ui.css" rel="stylesheet" media="all" type="text/css">
+		<LINK href="STYLE/default.css" rel="stylesheet" media="all" type="text/css">
+		<LINK href="STYLE/aDMiNiSTRaTioN.css" rel="stylesheet" media="all" type="text/css">
+		<!--<STYLE>TEXTAREA{width:320px;height:120px}</STYLE>-->
+		<SCRIPT src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></SCRIPT>
+		<SCRIPT src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></SCRIPT>
+		<SCRIPT src="SCRIPT/default.js"></SCRIPT>
+		<TITLE>苗栗產業創新服務網</TITLE>
+	</HEAD>
+	<BODY>
+		<TABLE id="contentWrapper">
+			<TBODY>
+				<TR>
+					<TD>
+						<ASIDE id="accordion">
+							<H3>網頁編輯器</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="">計畫簡介</A>
+									</LI>
+									<LI>
+										<A href="">輔導流程</A>
+									</LI>
+								</UL>
+							</DIV>
+
+							<H3>資訊櫥窗管理</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="">最新消息</A>
+									</LI>
+									<LI>
+										<A href="">活動花絮</A>
+									</LI>
+									<LI>
+										<A href="">下載專區</A>
+									</LI>
+									<LI>
+										<A href="">友站連結</A>
+									</LI>
+								</UL>
+							</DIV>
+
+							<H3>輔導案例</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="/counseling/">案例列表</A>
+									</LI>
+									<LI>
+										<A href="/vendor/">廠商</A>
+									</LI>
+									<LI>
+										<A href="/industrialDistrict/">工業區</A>
+									</LI>
+									<LI>
+										<A href="">單位</A>
+									</LI>
+									<LI>
+										<A href="">人員</A>
+									</LI>
+								</UL>
+							</DIV>
+						</ASIDE>
+						<IMG alt="logo" src="IMG/135x47.png">
+					</TD>
+					<TD>
+						<!--
+						<FORM action="" method="POST">
+							<FIELDSET>
+								<LEGEND>
+									<xsl:value-of select="@title"/>
+								</LEGEND>
+								<TABLE class="form">
+									<TR>
+										<TH>
+											<LABEL for="serialNumber">姓名</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="serialNumber" name="serialNumber" type="text" value="{serialNumber}">
+										</TD>
+										<TD>必填。</TD>
+									</TR>
+									<TR>
+										<TH class="must">
+											<LABEL for="fullname">姓名</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="fullname" name="fullname" type="text" value="{fullname}">
+										</TD>
+										<TD>必填。</TD>
+									</TR>
+									<TR>
+										<TH class="must">
+											<LABEL for="personalId">身份證字號</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="personalId" name="personalId" type="text" value="{personalId}">
+										</TD>
+										<TD>必填。</TD>
+									</TR>
+									<TR>
+										<TH class="must" title="身份證背面右上角">
+											<LABEL for="laserNumber">雷射控管號碼</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="laserNumber" name="laserNumber" type="text" value="{laserNumber}">
+										</TD>
+										<TD>必填。</TD>
+									</TR>
+									<TR>
+										<TH class="must" title="身份證背面右下角">
+											<LABEL for="blankNumber">空白證流水控管號碼</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="blankNumber" name="blankNumber" type="text" value="{blankNumber}">
+										</TD>
+										<TD>必填。</TD>
+									</TR>
+									<TR>
+										<TH class="must">生日</TH>
+										<TD>
+											<LABEL>
+												<SPAN>民國</SPAN>
+												<SELECT id="year" name="year">
+													<xsl:apply-templates select="years/*"/>
+												</SELECT>
+												<SPAN>年</SPAN>
+											</LABEL>
+											<LABEL>
+												<SELECT id="month" name="month">
+													<OPTION value="0">一</OPTION>
+													<OPTION value="1">二</OPTION>
+													<OPTION value="2">三</OPTION>
+													<OPTION value="3">四</OPTION>
+													<OPTION value="4">五</OPTION>
+													<OPTION value="5">六</OPTION>
+													<OPTION value="6">七</OPTION>
+													<OPTION value="7">八</OPTION>
+													<OPTION value="8">九</OPTION>
+													<OPTION value="9">十</OPTION>
+													<OPTION value="10">十一</OPTION>
+													<OPTION value="11">十二</OPTION>
+												</SELECT>
+												<SPAN>月</SPAN>
+											</LABEL>
+											<LABEL>
+												<SELECT id="date" name="date">
+													<xsl:apply-templates select="dates/*"/>
+												</SELECT>
+												<SPAN>日</SPAN>
+											</LABEL>
+										</TD>
+										<TD>必選。</TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="agent">預設業務</LABEL>
+										</TH>
+										<TD>
+											<SELECT id="agent" name="agent">
+												<OPTION value=""/>
+												<xsl:apply-templates select="agents/*"/>
+											</SELECT>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>性別</TH>
+										<TD>
+											<LABEL>
+												<INPUT name="gender" type="radio" value="false"/>
+												<SPAN>女性</SPAN>
+											</LABEL>
+											<LABEL>
+												<INPUT name="gender" type="radio" value="true"/>
+												<SPAN>男性</SPAN>
+											</LABEL>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>婚姻</TH>
+										<TD>
+											<LABEL>
+												<INPUT name="marriage" type="radio" value="false"/>
+												<SPAN>未婚</SPAN>
+											</LABEL>
+											<LABEL>
+												<INPUT name="marriage" type="radio" value="true"/>
+												<SPAN>已婚</SPAN>
+											</LABEL>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="contactAddress">聯絡地址</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="contactAddress" name="contactAddress" type="text" value="{contactAddress}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="contactNumber">聯絡電話</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="contactNumber" name="contactNumber" type="text" value="{contactNumber}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="censusAddress">戶籍地址</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="censusAddress" name="censusAddress" type="text" value="{censusAddress}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="censusNumber">戶籍電話</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="censusNumber" name="censusNumber" type="text" value="{censusNumber}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="companyName">公司名稱</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="companyName" name="companyName" type="text" value="{companyName}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="companyAddress">公司地址</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="companyAddress" name="companyAddress" type="text" value="{companyAddress}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="companyNumber">公司電話</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="companyNumber" name="companyNumber" type="text" value="{companyNumber}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="cellular">行動電話</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="cellular" name="cellular" type="text" value="{cellular}"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="reminder">留人</LABEL>
+										</TH>
+										<TD>
+											<TEXTAREA id="reminder" cols="1" name="reminder" rows="1">
+												<xsl:value-of select="reminder"/>
+											</TEXTAREA>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="memo">備註</LABEL>
+										</TH>
+										<TD>
+											<TEXTAREA id="memo" cols="1" name="memo" rows="1">
+												<xsl:value-of select="memo"/>
+											</TEXTAREA>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="primaryXerox">身份證影本</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="primaryXerox" name="primaryXerox" type="file"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="secondaryXerox">第二證件影本</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="secondaryXerox" name="secondaryXerox" type="file"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TH>
+											<LABEL for="verificationXerox">審核表影本</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="verificationXerox" name="verificationXerox" type="file"/>
+										</TD>
+										<TD></TD>
+									</TR>
+									<TR>
+										<TD colspan="3">
+											<INPUT class="fL" type="reset" value="復原"/>
+											<INPUT class="fR" type="submit" value="確定"/>
+										</TD>
+									</TR>
+								</TABLE>
+							</FIELDSET>
+						</FORM>
+						-->
+						<FORM action="" method="POST">
+							<FIELDSET>
+								<LEGEND>
+									<xsl:value-of select="@title"/>
+								</LEGEND>
+								<TABLE class="form">
+									<TR>
+										<TH>
+											<LABEL for="upperLevel">上層行政區</LABEL>
+										</TH>
+										<TD>
+											<SELECT id="upperLevel" name="upperLevel">
+												<OPTION value="">(無)</OPTION>
+											</SELECT>
+										</TD>
+										<TD>非必選。</TD>
+									</TR>
+									<TR>
+										<TH class="must">
+											<LABEL for="name">行政區名稱</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="name" name="name" type="text" value="{name}">
+										</TD>
+										<TD>必填且於同「上層行政區」裡不得有重複名稱。</TD>
+									</TR>
+									<TR>
+										<TD colspan="3">
+											<INPUT class="fL" type="reset" value="復原"/>
+											<INPUT class="fR" type="submit" value="確定"/>
+										</TD>
+									</TR>
+								</TABLE>
+							</FIELDSET>
+						</FORM>
+					</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<DIV id="header" class="cF">
+			<DIV id="breadcrumb" class="fL">
+				<A href="">首頁</A>
+				<SPAN>&#187;</SPAN>
+				<A>這頁</A>
+			</DIV>
+			<DIV class="fR">
+				<A>某咪郎</A>
+				<SPAN>&#187;</SPAN>
+				<A href="">登出</A>
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>

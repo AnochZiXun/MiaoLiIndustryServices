@@ -1,0 +1,101 @@
+/**
+ * @author	Rick Wu (a.k.a 小武)
+ */
+@charset "utf-8";
+/*取消 Html 原有樣式---------------------------------*/
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{
+	border:0;
+}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ol,ul {list-style:none;margin:0;padding:0;}
+/*基本------------------------------------------*/
+html { overflow:-moz-scrollbars-vertical; overflow-y:scroll;z-index: 999;font-size:14px;}
+body{font-family: Helvetica, Arila,"微軟正黑體", "Microsoft JhengHei", "新細明體", "PMingLiU", sans-serif;color:#272626;-webkit-text-size-adjust:none;background:url(../IMG/bg.jpg) repeat-x #fff;}
+a {color:#4973a2;text-decoration:none;}
+/*共用-----------------------------------------*/
+#container{position:relative;width:960px;margin:0px auto;}
+#header{position:relative;float:left;width:100%;height:131px;background:url(../IMG/header.jpg) no-repeat;}
+#logo{position:absolute;top:9px;left:32px;}
+.topnav{position:absolute;right:45px;top:25px;}
+.topnav li{display:inline-block;margin-left:18px;}
+.search{position:absolute;top:55px;right:38px;width:220px;height:24px;background:url(../IMG/searchbar.png) no-repeat;}
+.search .searchSend{float:right;}
+.search .input{float:left;width:187px;padding-left:8px;height:22px;line-height:22px;background:none;border:0px;}
+#menu{position:absolute;width:920px;top:111px;left:20px;height:21px;line-height:21px;font-size:14px;}
+#menu li{float:left;text-align:center;width:/*91*/80px;height:16px;border-right:1px solid #908f8f;}
+#menu li a{color:#768087;display:block;height:21px;margin-top:-2px;}
+#menu LI A.on{position:relative;color:#fff;background:#e36b39;}
+#menu li a:hover{color:#fff;background:#e36b39;}
+#menu li.no{border:0px;}
+#banner{position:relative;float:left;z-index:8;width:100%;height:318px}
+#banner img{position:absolute;top:0px;left:0px;z-index:16}
+#wrapper{position:relative;float:left;width:100%;min-height:330px;margin-top:1px;background:url(../IMG/contentbg.jpg) repeat-y;}
+#aside{margin-top:10px;padding-right:12px;padding-bottom:260px;padding-left:12px;position:relative;float:left;width:175px}
+#aside li{margin-bottom:5px;display:block}
+.counter{position:absolute;left:12px;bottom:301px;width:175px;height:28px;background:#cccdcd;display:block;text-align:center;}
+.counter span{margin-top:4px;margin-left:2px;display:inline-block;width:14px;height:20px;line-height:20px;color:#9E9E9F;background:#FFF;font-weight:bold;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px}
+.asidebg{position:absolute;bottom:101px;left:0px;}
+#content{position:relative;float:left;width:720px;margin-left:26px;padding-bottom:50px;}
+.navigation{position:absolute;top:9px;left:0px;font-size:12px;color:#727171;}
+.navigation a{color:#727171;}
+#footer{position:relative;float:left;width:100%;height:103px;}
+#footer .companyMsg{float:left;width:100%;height:65px;line-height:65px;background:#5691cd;color:#fff;text-align:center;font-size:14px;}
+#footer .copyright{float:left;width:100%;height:38px;line-height:38px;color:#727171;text-align:center;font-size:12px;}
+#footer .copyright a{color:#727171;}
+
+/*首頁*/
+.activity{position:relative;float:left;width:630px;margin-top:28px;margin-left:33px;}
+.activity span.title{float:left;width:630px;font-size:18px;color:#e36b39;line-height:30px;border-bottom:1px solid #6b6a6a;}
+.activity span.title h3{float:left;}
+.activity span.title a{font-size:14px;color:#e36b39;float:right;margin-right:15px;}
+.activityList{position:relative;width:640px;display:inline-block;margin-top:10px;}
+.activityList li{float:left;width:152px;margin-right:7px;}
+.activityList li a{color:#272626;line-height:25px;}
+.indexNews{position:relative;float:left;width:630px;margin-top:42px;margin-left:33px;}
+.indexNews span.title{float:left;width:630px;font-size:18px;color:#e36b39;line-height:30px;border-bottom:1px solid #6b6a6a;}
+.indexNews span.title h3{float:left;}
+.indexNews span.title a{font-size:14px;color:#e36b39;float:right;margin-right:15px;}
+.indexNewsList{position:relative;width:100%;display:inline-block;margin-top:7px;}
+.indexNewsList li{float:left;width:100%;margin-bottom:25px;}
+.indexNewsList li span{float:left;width:90px;}
+.indexNewsList li a{float:left;width:540px;margin-left:0px;color:#5691cd;line-height:20px;}
+
+/*輔導案例*/
+#tutorship{float:left;margin-top:36px;width:100%;}
+#tutorship h3{font-size:18px;color:#e36b39;}
+#tutorship table .th{background:#e36b39;color:#fff;height:31px;}
+#tutorship table .even{background:#fae4db;}
+#tutorship table a{color:#272626;}
+#tutorship .tutorshipList{float:left;width:690px;margin-top:4px;}
+#tutorship .tutorshipList li{float:left;width:100%;border-bottom:1px dashed #e36b39;}
+#tutorship .tutorshipList li.no{border-bottom:0px;}
+#tutorship .tutorshipList li .title{float:left;width:98px;margin-top:13px;height:27px;line-height:27px;text-align:center;color:#fff;background:#e36b39;}
+#tutorship .tutorshipList li .description{float:left;width:580px;margin-left:8px;line-height:54px;font-weight:bold;}
+#tutorship .tutorshipList li .img{margin-top:13px;margin-bottom:13px;}
+
+/*計畫簡介*/
+.plan{float:left;margin-top:36px;width:630px;margin-left:33px;margin-bottom:10px;line-height:36px;}
+.plan span.title{float:left;width:630px;font-size:18px;color:#e36b39;line-height:30px;border-bottom:1px solid #6b6a6a;}
+.plan span.title h3{float:left;}
+.plan span.title a{font-size:14px;color:#e36b39;float:right;margin-right:15px;}
+
+/*最新消息*/
+.newsList{position:relative;width:100%;display:inline-block;margin-top:7px;}
+.newsList li{float:left;width:100%;padding:7px 0;border-bottom:1px solid #c8c8c9;line-height:18px;}
+.newsList li span{float:left;width:90px;}
+.newsList li a{float:left;width:540px;margin-left:0px;color:#5691cd;line-height:20px;}
+.newsFck{float:left;width:100%;padding-top:22px;line-height:25px;}
+
+/*
+ * 2016-07-01	下拉式
+ */
+DIV#menu LI.no>UL{margin:0;padding:0;position:absolute;top:0;z-index:32;visibility:hidden;color:#FFF}
+DIV#menu LI.no>UL>LI{height:24px;background-color:#E36B39}
+DIV#menu LI.no>UL>LI>A{line-height:24px;color:#FFF}
+DIV#menu LI.no:hover>UL{visibility:visible}

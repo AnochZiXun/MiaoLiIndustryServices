@@ -1,0 +1,15 @@
+/**
+ * @author	Rick Wu (a.k.a 小武)
+ */
+@charset "utf-8";
+.contact{float:left;width:523px;margin-left:88px;margin-top:43px;min-height:300px;}
+.contact .description{float:left;margin-left:11px;width:415px;font-weight:bold;color:#000;line-height:24px;}
+.contact .contactForm{float:left;width:100%;margin-top:38px;}
+.contact .c1{float:left;width:6px;height:16px;width:6px;background:#e36b39;}
+.contact .c2{float:left;line-height:16px;margin-left:8px;font-weight:bold;}
+.contact .c3{float:left;margin-left:6px;width:517px;height:32px;}
+.contact .input{background:none;border:0px;background:#f9e1d7;width:510px;height:32px;font-size:14px;padding-left:7px;}
+.contact .textarea{margin-left:0 !important;width:515px !important;height:256px;overflow:auto;border:0px;background:#f9e1d7;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ .contact .textarea{width:513px;}}
+.contact .submit{background:#f9e1d7;border:0px;width:50px;height:25px;font-size:13px;line-height:25px;}
+TABLE.contactForm>CAPTION{color:#C00}

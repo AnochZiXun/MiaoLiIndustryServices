@@ -1,0 +1,10 @@
+/**
+ * @author	Rick Wu (a.k.a 小武)
+ */
+@charset "utf-8";
+.download{border:4px solid #FFF}
+.download td{border-right:4px solid #FFF}
+.downloadtitle{height:32px;color:#FFF;background:#E36B39}
+.downloadList{border-top:4px solid #FFF;height:32px;background:#F9E1D7}
+.downloadList .title{padding-left:20px}
+.downloadList a{color:#5691CD;font-weight:bold}

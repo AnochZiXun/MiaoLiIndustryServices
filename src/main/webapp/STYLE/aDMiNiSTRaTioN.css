@@ -1,0 +1,42 @@
+/**
+ * @author	P-C Lin (a.k.a 高科技黑手)
+ */
+.button,INPUT[type='reset'],INPUT[type='submit']{padding:3px 6px;border:1px solid;border-color:#CCC #BBB #AAA;border-radius:3px;display:inline-block;line-height:16px;vertical-align:middle;color:#333;font-size:100%;text-decoration:none;cursor:pointer;transition:ease .6s}
+.button:hover,INPUT[type='reset']:hover,INPUT[type='submit']:hover{border-color:#666 #555 #444;color:#26B3F7;background-color:#333}
+INPUT[type='password'],INPUT[type='text'],SELECT,TEXTAREA{padding:0 6px;border:1px dotted #9197A3;height:24px;font-family:'bitstream vera sans mono','courier new',monospace}
+INPUT[type='password']:focus,INPUT[type='text']:focus,SELECT:focus,TEXTAREA:focus{border:1px solid #26B3F7}
+TEXTAREA{padding:6px;width:320px;height:120px;font-family:'bitstream vera sans mono','courier new',monospace;font-size:12px;resize:none}
+B.blank{display:inline-block;width:8px}
+
+BODY{margin:0;padding:0;color:#000;background-image:url(../IMG/backgroundImage.png);font-family:'georgia','新細明體',sans-serif;font-size:12px}
+
+TABLE#contentWrapper{border-collapse:separate;border-spacing:3px;position:absolute;top:32px;left:0}
+TABLE#contentWrapper>TBODY>TR>TD{padding:3px;vertical-align:top}
+
+.ui-accordion .ui-accordion-content{padding:6px}
+ASIDE#accordion{min-width:128px;max-width:256px}
+ASIDE#accordion UL{margin:0;padding:0;list-style-type:none}
+ASIDE#accordion A{line-height:24px;text-decoration:none}
+ASIDE#accordion A[href]:hover{border-bottom:1px dotted}
+
+TABLE.list{border-collapse:collapse;border-spacing:3px;min-width:480px;cursor:default}
+TABLE.list INPUT[name='s']{width:16px;text-align:center}
+TABLE.list>THEAD TR{color:#FFF;background-color:#0972A5}
+TABLE.list TH>A[href]{border-bottom:1px dotted;color:#FFF;text-decoration:none}
+TABLE.list TH,TABLE.list TD{padding:3px 6px;border:1px solid #333;line-height:16px;vertical-align:middle}
+TABLE.list TD{overflow:hidden;text-align:center;white-space:nowrap}
+TABLE.list TR.odd TD{background-color:rgba(9,114,165,.1)}
+TABLE.list TD>A[href]{display:inline-block;color:#0972A5;font-size:16px;text-decoration:none;cursor:pointer}
+TABLE.list A[href]:hover{color:#000}
+TABLE.list A[href].button{font-weight:bold}TABLE.list A[href].button:hover{color:#26B3F7}
+
+FORM>FIELDSET{display:inline-block}
+
+TABLE.form CAPTION{color:#C00}
+TABLE.form TH{text-align:right}TABLE.form TH:after{content:'：'}
+TABLE.form TD{text-align:left}
+
+DIV#header{position:fixed;top:0;right:0;left:0;height:32px;background-color:rgba(51,51,51,.9)}
+DIV#header A{padding:0 6px}
+DIV#header A,DIV#header SPAN{display:inline-block;line-height:32px;color:#FFF;cursor:default}
+DIV#header A[href]{text-decoration:none}DIV#header A[href]:hover{font-weight:bold;cursor:pointer}

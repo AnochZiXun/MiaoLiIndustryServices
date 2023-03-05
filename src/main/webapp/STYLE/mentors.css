@@ -1,0 +1,11 @@
+/**
+ * @author	Rick Wu (a.k.a 小武)
+ */
+@charset "utf-8";
+@font-face{font-family:'FontAwesome';font-style:normal;font-weight:normal;src: url('../FONT/fontawesome-webfont.eot?v=4.3.0');src: url('../FONT/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../FONT/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../FONT/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../FONT/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../FONT/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg')}
+.tutorshipFck{float:left;width:670px;margin-left:-24px;padding-top:22px;line-height:25px;}
+.tutorshipTeam{position:relative;float:left;width:700px;margin-top:34px;}
+.tutorshipTeam td{text-align:center;}
+.tutorshipTeam .odd{height:32px;border-top:4px solid #fff;background:#f9e1d7;background:#fff;}
+.tutorshipTeam .even{height:32px;border-top:4px solid #fff;background:#f9e1d7;background:#f9e1d7;}
+.tutorshipTeam .textLeft{text-align:left;padding:7px;}

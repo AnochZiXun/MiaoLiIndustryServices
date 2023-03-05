@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="">
+	<Resource
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		type="javax.sql.DataSource"
+
+		auth="Container"
+		closeMethod="close"
+		name="jdbc/MiiDS"
+		url="jdbc:postgresql://localhost:5432/MiiDB"
+
+		defaultAutoCommit="false"
+		defaultCatalog="MiiDB"
+		driverClassName="org.postgresql.Driver"
+		username="mii"
+		password="AUL6XU4T03U,4tj;4vup zj6j4j;3"
+		testOnBorrow="true"
+		testOnReturn="true"
+		testWhileIdle="true"
+		validationQuery="SELECT 1"
+		removeAbandoned="true"
+		logAbandoned="true"
+
+		rollbackOnReturn="true"
+	/>
+	<!--
+	<Resource
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		type="javax.sql.DataSource"
+
+		auth="Container"
+		closeMethod="close"
+		name="jdbc/MiiDS"
+		url="jdbc:postgresql://localhost:5432/MiiDB"
+
+		defaultAutoCommit="false"
+		defaultCatalog="MiiDB"
+		driverClassName="org.postgresql.Driver"
+		username="mii"
+		password="AUL6XU4T03U,4tj;4vup zj6j4j;3"
+		testOnBorrow="true"
+		testOnReturn="true"
+		testWhileIdle="true"
+		validationQuery="SELECT 1"
+		removeAbandoned="true"
+		logAbandoned="true"
+
+		rollbackOnReturn="true"
+	/>
+	-->
+</Context>

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<META charset="UTF-8">
+		<META name="viewport" content="width=device-width, initial-scale=1.0">
+		<LINK href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/dark-hive/jquery-ui.css" rel="stylesheet" media="all" type="text/css">
+		<LINK href="STYLE/default.css" rel="stylesheet" media="all" type="text/css">
+		<LINK href="STYLE/aDMiNiSTRaTioN.css" rel="stylesheet" media="all" type="text/css">
+		<!--<STYLE>TEXTAREA{width:320px;height:120px}</STYLE>-->
+		<SCRIPT src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></SCRIPT>
+		<SCRIPT src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></SCRIPT>
+		<SCRIPT src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"></SCRIPT>
+		<SCRIPT src="/ckfinder/ckfinder.js"></SCRIPT>
+		<SCRIPT>
+			$(document).ready(function () {
+				if (typeof CKEDITOR !== 'undefined') {
+					var editor = CKEDITOR.replace('wysiwyg', {
+						toolbar: [
+							{name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']},
+							{name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl']},
+							{name: 'links', items: ['Link', 'Unlink', 'Anchor']},
+							{name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar']},
+							'/',
+							{name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize']},
+							{name: 'colors', items: ['TextColor', 'BGColor']},
+							{name: 'tools', items: ['Maximize', 'ShowBlocks']},
+							{name: 'others', items: ['-']},
+							{name: 'about', items: ['About']}
+						]
+					});
+					CKFinder.setupCKEditor(editor, '/ckfinder/');
+					CKEDITOR.on('instanceReady', function (ev) {
+						ev.editor.dataProcessor.writer.selfClosingEnd = '>';
+					});
+				}
+			});
+		</SCRIPT>
+		<TITLE>苗栗產業創新服務網</TITLE>
+	</HEAD>
+	<BODY>
+		<TABLE id="contentWrapper">
+			<TBODY>
+				<TR>
+					<TD>
+						<ASIDE id="accordion">
+							<H3>網頁編輯器</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="">計畫簡介</A>
+									</LI>
+									<LI>
+										<A href="">輔導流程</A>
+									</LI>
+								</UL>
+							</DIV>
+
+							<H3>資訊櫥窗管理</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="">最新消息</A>
+									</LI>
+									<LI>
+										<A href="">活動花絮</A>
+									</LI>
+									<LI>
+										<A href="">下載專區</A>
+									</LI>
+									<LI>
+										<A href="">友站連結</A>
+									</LI>
+								</UL>
+							</DIV>
+
+							<H3>輔導案例</H3>
+							<DIV>
+								<UL>
+									<LI>
+										<A href="/counseling/">案例列表</A>
+									</LI>
+									<LI>
+										<A href="/vendor/">廠商</A>
+									</LI>
+									<LI>
+										<A href="/industrialDistrict/">工業區</A>
+									</LI>
+									<LI>
+										<A href="">單位</A>
+									</LI>
+									<LI>
+										<A href="">人員</A>
+									</LI>
+								</UL>
+							</DIV>
+						</ASIDE>
+						<IMG alt="logo" src="IMG/135x47.png">
+					</TD>
+					<TD>
+						<FORM action="/JiHuaJianJie/" method="POST">
+							<FIELDSET>
+								<LEGEND>&#60;LEGEND&#47;&#62;</LEGEND>
+								<TABLE class="form">
+									<TR>
+										<TH class="must">
+											<LABEL for="{generate-id(title)}">標題</LABEL>
+										</TH>
+										<TD>
+											<INPUT id="{generate-id(title)}" name="title" type="text" value="{title}"/>
+										</TD>
+										<TD>必填。</TD>
+									</TR>
+									<TR>
+										<TH class="must">
+											<LABEL for="wysiwyg">內容</LABEL>
+										</TH>
+										<TD>
+											<TEXTAREA id="wysiwyg" cols="1" name="wysiwyg" rows="1">
+												<xsl:value-of select="wysiwyg" disable-output-escaping="yes"/>
+											</TEXTAREA>
+										</TD>
+										<TD>必填。</TD>
+									</TR>
+									<TR>
+										<TD colspan="3">
+											<INPUT class="fL" type="reset" value="復原"/>
+											<INPUT class="fR" type="submit" value="確定"/>
+										</TD>
+									</TR>
+								</TABLE>
+							</FIELDSET>
+						</FORM>
+					</TD>
+				</TR>
+			</TBODY>
+		</TABLE>
+		<DIV id="header" class="cF">
+			<DIV id="breadcrumb" class="fL">
+				<A href="">首頁</A>
+				<SPAN>&#187;</SPAN>
+				<A>這頁</A>
+			</DIV>
+			<DIV class="fR">
+				<A>某咪郎</A>
+				<SPAN>&#187;</SPAN>
+				<A href="">登出</A>
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>

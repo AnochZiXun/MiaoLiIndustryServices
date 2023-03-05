@@ -1,0 +1,20 @@
+/**
+ * @author	P-C Lin (a.k.a 高科技黑手)
+ */
+@font-face{font-family:'FontAwesome';font-style:normal;font-weight:normal;src: url('../FONT/fontawesome-webfont.eot?v=4.3.0');src: url('../FONT/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../FONT/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../FONT/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../FONT/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../FONT/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg')}
+.fontAwesome{font-family:'FontAwesome'}
+@font-face{font-family:'Bitstream Vera Sans Mono';font-style:normal;font-weight:normal;src:url('../FONT/VeraMono.ttf') format('truetype')}
+@font-face{font-family:'Bitstream Vera Sans Mono Bold';font-style:normal;font-weight:bold;src:url('../FONT/VeraMoBd.ttf') format('truetype')}
+@font-face{font-family:'Bitstream Vera Sans Mono Oblique';font-style:italic;font-weight:normal;src:url('../FONT/VeraMoIt.ttf') format('truetype')}
+@font-face{font-family:'Bitstream Vera Sans Mono Bold Oblique';font-style:italic;font-weight:bold;src:url('../FONT/VeraMoBI.ttf') format('truetype')}
+.bitstreamVeraSansMono{font-family:'Bitstream Vera Sans Mono'}
+.bold{font-weight:bold}
+.cF{float:none;clear:both}
+.cF:before,.cF:after{display:inline-block;visibility:hidden;content:' '}
+.fL{float:left}
+.fR{float:right}
+.monospace{font-family:'Bitstream Vera Sans Mono','courier new',monospace}
+.must:before{content:'*';color:#C00}
+.textAlignCenter{text-align:center}
+.textAlignLeft{text-align:left}
+.textAlignRight{text-align:right}
